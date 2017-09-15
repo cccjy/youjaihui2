@@ -1,0 +1,36 @@
+/*重置样式*/
+/*选择所有内容*/
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+/*移出点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+/*以什么开始计算内容的宽度*/
+    box-sizing: border-box;
+}
+html{font-size: 625%}
+body{
+    font-size: .12rem;
+    font-family: 微软雅黑, sans-serif,'宋体';
+    color: #333;
+}
+ul,ol{list-style: none}
+a{text-decoration: none;color: #333}
+input,select,textarea{
+    border: none;
+    outline: none;
+/*清除移动端默认样式*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+img{max-width: 100%;display: block;vertical-align: middle}
+.fl{float: left}
+.fr{float: right}
+.clearFix::before,.clearFix::after{
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+.clearFix{zoom: 1}
